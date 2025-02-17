@@ -14,7 +14,7 @@ import {
   ExternalLink,
   Menu,
   Plus,
-  Keyboard,
+  Brain,
 } from "lucide-react";
 
 const Index = () => {
@@ -74,11 +74,11 @@ const Index = () => {
               <Plus className="w-6 h-6 text-muted-foreground" />
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-                  <Keyboard className="w-8 h-8 text-primary" />
+                  <Brain className="w-8 h-8 text-primary" />
                 </div>
-                <span className="text-sm mt-2">עיבוד</span>
+                <span className="text-sm mt-2">עיבוד AI</span>
               </div>
-              <Plus className="w-6 h-6 text-muted-foreground" />
+              <div className="flex items-center justify-center w-6 h-6 text-muted-foreground font-bold text-xl">=</div>
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
                   <FileText className="w-8 h-8 text-primary" />
