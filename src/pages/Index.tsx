@@ -13,6 +13,8 @@ import {
   Phone,
   ExternalLink,
   Menu,
+  Plus,
+  Keyboard,
 } from "lucide-react";
 
 const Index = () => {
@@ -60,6 +62,31 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-muted-foreground">
               TextU – מדיבור לכתב בצורה חכמה, מדויקת ויעילה.
             </p>
+            
+            {/* Process Visualization */}
+            <div className="flex items-center justify-center gap-4 my-12">
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+                  <Mic className="w-8 h-8 text-primary" />
+                </div>
+                <span className="text-sm mt-2">הקלטה</span>
+              </div>
+              <Plus className="w-6 h-6 text-muted-foreground" />
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+                  <Keyboard className="w-8 h-8 text-primary" />
+                </div>
+                <span className="text-sm mt-2">עיבוד</span>
+              </div>
+              <Plus className="w-6 h-6 text-muted-foreground" />
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+                  <FileText className="w-8 h-8 text-primary" />
+                </div>
+                <span className="text-sm mt-2">דוח מוכן</span>
+              </div>
+            </div>
+
             <Button size="lg" className="text-lg px-8 py-6">
               התחילו עכשיו – חודש ניסיון חינם!
               <ChevronLeft className="mr-2" />
